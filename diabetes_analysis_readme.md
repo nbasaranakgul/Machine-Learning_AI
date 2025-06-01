@@ -3,7 +3,6 @@
 [![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/downloads/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
 [![Google Colab](https://img.shields.io/badge/Google-Colab-yellow.svg)](https://colab.research.google.com/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 A comprehensive data science project analyzing diabetes risk factors and building predictive models to identify high-risk patients for early intervention and personalized healthcare recommendations.
 
@@ -31,15 +30,11 @@ Diabetes is a chronic metabolic disorder affecting millions worldwide, with seri
 
 1. **What are the primary risk factors** contributing to high diabetes risk scores?
 2. **Can we predict diabetes risk** using patient lifestyle and health metrics?
-3. **How do different patient groups** cluster based on their health profiles?
-4. **What interventions** would be most effective for different risk categories?
 
 ### 🎯 Project Goals
 
 - **Risk Factor Analysis**: Identify key contributors to diabetes risk
 - **Predictive Modeling**: Build accurate models for risk prediction
-- **Patient Segmentation**: Group patients for targeted interventions
-- **Clinical Insights**: Provide actionable recommendations for healthcare providers
 
 ## 📊 Project Overview
 
@@ -119,36 +114,9 @@ The dataset contains comprehensive health information for 1,000 patients collect
 ### Option 1: Google Colab (Recommended)
 
 1. **Open Google Colab**: [colab.research.google.com](https://colab.research.google.com/)
-2. **Upload the notebook**: `diabetes_analysis.ipynb`
+2. **Upload the notebook**: `Predistion.Risk_factors_of_Diabetes.ML.ipynb`
 3. **Upload the dataset**: `diabetes_data.csv`
 4. **Run all cells** sequentially
-
-### Option 2: Local Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/your-username/diabetes-risk-analysis.git
-cd diabetes-risk-analysis
-
-# Create virtual environment
-python -m venv diabetes_env
-source diabetes_env/bin/activate  # On Windows: diabetes_env\Scripts\activate
-
-# Install required packages
-pip install -r requirements.txt
-
-# Launch Jupyter Notebook
-jupyter notebook diabetes_analysis.ipynb
-```
-
-### Option 3: Docker Setup
-
-```bash
-# Build Docker image
-docker build -t diabetes-analysis .
-
-# Run container
-docker run -p 8888:8888 diabetes-analysis
 ```
 
 ## 💻 Usage
@@ -188,52 +156,6 @@ risk_prediction = predict_patient_risk(
     physical_activity=15, diet=1, medication_adherence=1
 )
 ```
-
-### 📋 **Quick Start Guide**
-
-For immediate results, follow these steps:
-
-1. **Open the notebook** in Google Colab
-2. **Upload your data** when prompted
-3. **Run all cells** using `Runtime > Run all`
-4. **Review results** in the output sections
-5. **Use prediction function** for new patients
-
-## 📁 Project Structure
-
-```
-diabetes-risk-analysis/
-│
-├── 📊 data/
-│   ├── diabetes_data.csv          # Main dataset
-│   └── sample_predictions.csv     # Example predictions
-│
-├── 📓 notebooks/
-│   ├── diabetes_analysis.ipynb    # Main analysis notebook
-│   ├── eda_detailed.ipynb         # Extended EDA
-│   └── model_comparison.ipynb     # Model benchmarking
-│
-├── 🐍 src/
-│   ├── data_preprocessing.py      # Data cleaning functions
-│   ├── feature_engineering.py     # Feature creation
-│   ├── model_training.py          # ML model training
-│   └── prediction_utils.py        # Prediction functions
-│
-├── 📈 results/
-│   ├── visualizations/            # Generated plots
-│   ├── model_metrics.json         # Performance metrics
-│   └── insights_report.pdf        # Executive summary
-│
-├── 🔧 config/
-│   ├── model_config.yaml          # Model parameters
-│   └── data_config.yaml           # Data processing settings
-│
-├── 📋 requirements.txt            # Python dependencies
-├── 🐳 Dockerfile                 # Container setup
-├── 📖 README.md                  # This file
-└── 📄 LICENSE                    # MIT License
-```
-
 ## 🔬 Methodology
 
 ### 1️⃣ **Data Preprocessing**
@@ -369,97 +291,7 @@ diabetes-risk-analysis/
 - **Python** (3.7+): Programming language
 - **Git**: Version control
 
-### 🐳 **Deployment & Infrastructure**
-- **Docker**: Containerization
-- **GitHub Actions**: CI/CD pipeline
-- **AWS/GCP**: Cloud deployment options
-
-## 🤝 Contributing
-
-We welcome contributions from the community! Here's how you can help:
-
-### 🔧 **Ways to Contribute**
-
-1. **Bug Reports**: Found an issue? Open a GitHub issue
-2. **Feature Requests**: Suggest new functionality
-3. **Code Contributions**: Submit pull requests
-4. **Documentation**: Improve README or add tutorials
-5. **Testing**: Help test edge cases and scenarios
-
-### 📋 **Contribution Guidelines**
-
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/AmazingFeature`)
-3. **Commit** your changes (`git commit -m 'Add some AmazingFeature'`)
-4. **Push** to the branch (`git push origin feature/AmazingFeature`)
-5. **Open** a Pull Request
-
-### 🧪 **Development Setup**
-
-```bash
-# Clone your fork
-git clone https://github.com/your-username/diabetes-risk-analysis.git
-
-# Install development dependencies
-pip install -r requirements-dev.txt
-
-# Run tests
-pytest tests/
-
-# Run linting
-flake8 src/
-black src/
-```
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License
-
-Copyright (c) 2024 Diabetes Risk Analysis Project
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-```
-
-## 📞 Support & Contact
-
-- **GitHub Issues**: [Create an issue](https://github.com/your-username/diabetes-risk-analysis/issues)
-- **Email**: your-email@example.com
-- **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/your-profile)
-- **Documentation**: [Project Wiki](https://github.com/your-username/diabetes-risk-analysis/wiki)
-
 ## 🙏 Acknowledgments
-
-- **Healthcare Domain Experts** for clinical insights
-- **Open Source Community** for amazing libraries
 - **Kaggle** for inspiration and datasets
 - **Google Colab** for free computing resources
 
-## 📚 References & Further Reading
-
-1. American Diabetes Association. (2024). *Standards of Medical Care in Diabetes*
-2. World Health Organization. (2023). *Global Report on Diabetes*
-3. Machine Learning in Healthcare: [Nature Medicine Reviews](https://www.nature.com/nm/)
-4. Diabetes Prevention Research: [Diabetes Care Journal](https://diabetesjournals.org/)
-
----
-
-⭐ **Star this repository** if you found it helpful!
-
-🔄 **Fork and contribute** to make it even better!
-
-📢 **Share with colleagues** who might benefit from this analysis!
-
----
-
-*Last updated: May 2024*
